@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Mina');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+*{
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background-color:#061424;
+	font-family: 'Mina', sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	
+    display: flex;
+    justify-content:  center;
+
+}
+ul>li{
+	display: inline-block;
+}
+ul>li>a{
+color: #fff;
+display: block;
+padding: 20px 55px;
+margin: 0;
+}
+.menu{
+    background-color:black;
+}
+.menu ul li a:hover{
+background-color: #675;
+border-bottom:solid #fff;
+box-sizing: border-box;
+}
+.slider {
+	width: 100%;
+	height: 550px;
+	background-image: url(../assets/poster-inicio.jpg);
+	background-size: cover;
+}
+.avengers{
+	position: relative;
+    top: -192px;
+    left: 30px;
+	color: white;
+	font-family:'Dosis', sans-serif;
+}
+p{
+	position: relative;
+    top: -179px;
+    left: 30px;
+    color: white;
+}
+.vertrailer{
+	color: white;
+    position: relative;
+    top: -165px;
+    left: 32px;
+}
+}
+
+
+
