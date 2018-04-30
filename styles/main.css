@@ -50,7 +50,7 @@ box-sizing: border-box;
 	color: white;
 	font-family:'Dosis', sans-serif;
 }
-p{
+.piedepagina{
 	position: relative;
     top: -179px;
     left: 30px;
@@ -111,7 +111,12 @@ section li{
 	margin-left: 12px;
 }
 .covers {
-	margin: 41px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 footer{
 	width: 100%;
@@ -129,4 +134,75 @@ footer p{
 	text-align: center;
 	border-top: 1px solid white;
 
+}
+.contenedor{
+	position: relative;
+    width: 270px;
+    height: 330px;
+    overflow: hidden;
+}
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	left: 0;	
+	top: 0;
+	display: flex;
+	flex-direction: column;
+    margin: auto;
+    transition: .5s;
+	overflow: hidden;
+   
+}
+.contenedor:hover img{
+    transform: scale(1.5);
+}
+
+.titulo{
+    color:darkorange;
+}
+a{
+    color: darkturquoise;
+    
+    
+}
+
+.contenedor:hover .mask{
+    background-color:rgba(155, 89, 182,.4);
+}
+h4{
+    text-align: center;
+    transition: 1s;
+}
+.contenedor:hover h4{
+    transform: translatey(0);
+}
+p{
+    font-size: 12px;
+    transition: 1s;
+    color: brown;
+    text-align: justify;
+}
+.contenedor:hover p{
+    transform: translatey(0);
+}
+.mask>* {
+	opacity: 0;
+	transform: translateY(-40px);
+}
+.mask a{
+	margin: 0 auto;
+    transition: .5s;
+    padding: 10px;
+    background-color: blue;
+    color: aliceblue;
+}
+.contenedor:hover *{
+	transform: translateY(0);
+	opacity: 1;
+}
+.container{
+	display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
