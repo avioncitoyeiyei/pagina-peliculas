@@ -96,9 +96,19 @@ box-sizing: border-box;
 	100%{margin-left: -300%;}
 
 }
-.slider ul:hover{
-	animation-play-state: paused;
-	cursor: pointer;
+
+.informacion{
+	position:relative;
+}
+.infti{
+	position: absolute;
+	top: 230px;
+	left: 80px;
+}
+.infpa{
+	position: absolute;
+	top: 470px;
+	left: 100px;
 }
 h1{
 	position: relative;
@@ -139,7 +149,8 @@ footer p{
 	position: relative;
     width: 270px;
     height: 330px;
-    overflow: hidden;
+	overflow: hidden;
+	margin: 20px;
 }
 .mask{
     position: absolute;
@@ -168,7 +179,7 @@ a{
 }
 
 .contenedor:hover .mask{
-    background-color:rgba(155, 89, 182,.4);
+    background-color:rgba(27, 13, 32, 0.603);
 }
 h4{
     text-align: center;
@@ -180,7 +191,7 @@ h4{
 p{
     font-size: 12px;
     transition: 1s;
-    color: brown;
+    color: rgb(255, 255, 255);
     text-align: justify;
 }
 .contenedor:hover p{
@@ -192,10 +203,12 @@ p{
 }
 .mask a{
 	margin: 0 auto;
-    transition: .5s;
+    transition: 1.5s;
     padding: 10px;
     background-color: blue;
-    color: aliceblue;
+	color: aliceblue;
+	position: relative;
+    top: 100px;
 }
 .contenedor:hover *{
 	transform: translateY(0);
