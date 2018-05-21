@@ -97,7 +97,7 @@ box-sizing: border-box;
 
 }
 .ultimasagregadas{
-	margin: 0px 0px 0px 35px;
+	margin: 0px 0px 0px 50px;
 }
 
 .informacion{
@@ -136,7 +136,7 @@ h1{
 }
 section li{
 	display: inline;
-	margin-left: 12px;
+	margin-left: 63px;
 }
 .covers {
 	position: absolute;
@@ -184,4 +184,9 @@ overflow: hidden;
 body .ultimasagregadas li{
 float: left;
 overflow: hidden;
+}
+.active {
+	background-color: rgba(0, 47, 255, 0.26);
+	border-bottom:solid #fff;
+	box-sizing: border-box;
 }
