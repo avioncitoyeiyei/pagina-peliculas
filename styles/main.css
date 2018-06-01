@@ -51,7 +51,6 @@ box-sizing: border-box;
 	font-family:'Dosis', sans-serif;
 }
 .piedepagina{
-	position: relative;
     top: -179px;
     left: 30px;
     color: white;
@@ -97,7 +96,7 @@ box-sizing: border-box;
 
 }
 .ultimasagregadas{
-	margin: 0px 0px 0px 50px;
+margin:  55px 0px 0px 10px;
 }
 
 .informacion{
@@ -107,7 +106,8 @@ box-sizing: border-box;
 	left: 87px;
     top: 232px;
     position: absolute;
-    color: white;
+	color: white;
+	margin: 20px 0px 0px 12px;
     
 }
 .infpa{
@@ -132,7 +132,9 @@ h1{
 	position: relative;
     top: 10px;
 	color: white;
-	margin: 10px 0 20px 12px;
+}
+.peliculasindex{
+	margin: 20px 0px 0px 70px;
 }
 section li{
 	display: inline;
@@ -148,16 +150,16 @@ section li{
 }
 footer{
 	width: 100%;
-	height: 70px;
-	flex: 0 0 auto;
+    height: 70px;
+    flex: 0 0 auto;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: -75px;
 }
 footer p{
 	display: inline-block;
-	margin-top: 190px;
-	margin-left: 25%;
 	width: 600px;
 	height: 50px;
-	color: white;
 	font-size: 10px;
 	text-align: center;
 	border-top: 1px solid white;
@@ -189,4 +191,141 @@ overflow: hidden;
 	background-color: rgba(0, 47, 255, 0.26);
 	border-bottom:solid #fff;
 	box-sizing: border-box;
+}
+
+.linea_peliculas{
+	DISPLAY: flex;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+    justify-content: space-around;
+}
+hr{
+	transform: rotate(90deg);
+    height: 460px;
+}
+.pelicula{
+	display: flex;
+	display:-ms-flexbox;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	padding: 4vh 0;
+	position: relative;
+	z-index: 10;
+}
+.portadapelicula{
+	display: block;
+	position: relative;
+}
+.contenido{
+	width: 100%;
+	padding: 0 30px;
+	flex: 1;
+	margin-bottom: 30px;
+}
+.contenido h1{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #fff;
+	top: 0;
+	text-overflow: ellipsis;
+	line-height: 1;
+
+}
+.detalles_pelicula{
+	width: 100%;
+	font-size: 25px;
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.year{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+}
+.duracion{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+}
+.categoria{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+}
+.edad{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+}
+.duracion:before{
+	content: "|";
+	display: inline-block;
+	margin: 0 8px;
+}
+.categoria:before{
+	content: "|";
+	display: inline-block;
+	margin: 0 8px;
+}
+.edad:before{
+	content: "|";
+	display: inline-block;
+	margin: 0 8px;
+}
+.informacionpeli{
+	font-size: 18px;
+	width: 100%;
+	margin-top: 15px;
+	color: #fff;
+}
+.contenido_todo{
+	padding: 0 3vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+.botonespelicula{
+	z-index: 200;
+    left: 190px;
+    top: 429px;
+    position: absolute;
+    padding: 10px;
+    background-color: #0099FF;
+    margin: 0 auto;
+}
+.botontrailer{
+	z-index: 200;
+    left: 190px;
+    top: 429px;
+    position: absolute;
+    padding: 10px;
+    background-color: #0099FF;
+    margin: 0 auto;
+}
+.portada{
+	width: 100%;
+	opacity: 0.3;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+html{
+	overflow-x: hidden;
+}
+.footerindex{
+		width: 100%;
+		height: 70px;
+		flex: 0 0 auto;
+		background: rgba(0,0,0,.5);
+		position: absolute;
+		bottom: -550px;
 }
