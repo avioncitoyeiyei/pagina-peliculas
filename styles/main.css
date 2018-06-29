@@ -347,7 +347,7 @@ html{
 	height: 300px;
 	width: 100%;
     position: absolute;
-	bottom:  -1698px;
+	top: 2038px;
 	z-index: 1;
 }
 footer{
